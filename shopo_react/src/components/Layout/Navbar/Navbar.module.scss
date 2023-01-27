@@ -1,0 +1,231 @@
+nav {
+  .up_nav {
+    padding: 20px 0;
+
+    .left_nav_adapt {
+      height: 100%;
+
+      .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .middle_nav_adapt {
+      .searching_tools {
+        margin: 0 auto;
+        max-width: 517px;
+        display: flex;
+        border: 1px solid #efefef;
+
+        .common_padding {
+          padding: 10px 0;
+          display: flex;
+          width: 80%;
+
+          form {
+            border-right: 1px solid #efefef;
+            width: 100%;
+
+            input {
+              padding: 0 0 0 20px;
+              font-size: 0.75rem;
+              font-weight: 500;
+              border: none;
+            }
+          }
+
+          .select_option {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #797979;
+            padding: 0 15px;
+            width: 100%;
+            cursor: pointer;
+
+            span {
+              height: 100%;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+
+        button {
+          width: 20%;
+          border: none;
+          background-color: #ffbb38;
+          color: #222222;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .right_nav_adapt {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+
+        li {
+          font-size: 25px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+
+          &:nth-child(1) {
+            font-size: 22px;
+            color: grey;
+          }
+
+          &:nth-child(3) {
+            font-size: 22px;
+          }
+
+          &:nth-child(4) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .down_nav {
+    background-color: #ffbb38;
+    height: 60px;
+
+    .left_side_down_nav {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      padding: 0 10px 0 0;
+
+      .accordion_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 53px;
+        cursor: pointer;
+        width: 100%;
+        background-color: white;
+        padding: 0 1.25rem;
+        border-radius: 0.375rem 0.375rem 0 0;
+
+        h6 {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 0;
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 10px;
+            font-size: 17px;
+          }
+        }
+
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .middle_side_down_nav {
+      height: 100%;
+
+      ul {
+        height: 100%;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+
+        li {
+          font-size: 14px;
+          font-weight: 600;
+          position: relative;
+          display: flex;
+          align-items: center;
+          &:hover {
+            .hover_menu {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          .hover_li {
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            span {
+              font-size: 14px;
+            }
+            svg {
+              font-size: 12px;
+            }
+          }
+
+          .hover_menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 15px 50px 0px #00000024;
+            width: 220px;
+            opacity: 0;
+            //pointer-events: auto;
+            transition: all 0.5s ease-in-out;
+            visibility: hidden;
+            ul {
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              padding: 20px;
+              gap: 15px;
+              li {
+                span {
+                  font-weight: 300;
+                  color: rgb(121, 121, 121);
+                  cursor: pointer;
+                  transition: 0.1s ease-in-out;
+                  border-bottom: 1px solid transparent;
+                  &:hover {
+                    color: #ffbb38;
+                    border-bottom: 1px inset #ffbb38;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right_side_down_nav {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      padding: 10px 0;
+      button {
+        width: 60%;
+        border: none;
+        background-color: #222222;
+        color: white;
+        svg {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
