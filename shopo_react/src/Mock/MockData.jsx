@@ -100,6 +100,26 @@ const products = [
     bannerNew: "",
     bannerPopular: "",
   },
+  {
+    id: Math.floor(Math.random() * 1000),
+    image:
+      "https://img.5element.by/import/images/ut/goods/good_3cd5f326-cfb7-11e9-80c7-005056840c70/234-00562-igrovaya-konsol-microsoft-xbox-one-s-1-tb--plus-gta5-5_600.jpg",
+    // image: {Product1},
+    productName: "Xoggle aute et pariatur adipisicing nostrud et...",
+    oldprice: "$27.27",
+    newprice: 18.73,
+    bannerNew: "",
+    bannerPopular: "POPULAR",
+  },
+  {
+    id: Math.floor(Math.random() * 1000),
+    image: "https://img.overclockers.co.uk/media/image/SP01DAS_155444.jpg",
+    productName: "Geeky ipsum esse repreh est consequat",
+    oldprice: "$24.55",
+    newprice: 17.79,
+    bannerNew: "",
+    bannerPopular: "",
+  },
 ];
 
 export default products;
