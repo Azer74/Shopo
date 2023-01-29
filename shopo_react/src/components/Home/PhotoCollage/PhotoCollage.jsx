@@ -49,7 +49,7 @@ const PhotoCollage = () => {
                 </div>
                 <div className={CollageStyle.ability_text}>
                   <h6>Free Shipping</h6>
-                  <p>When ordering over $100</p>
+                  <p>Get Return within 30 days</p>
                 </div>
               </div>
               <div className={CollageStyle.ability}>
@@ -58,7 +58,7 @@ const PhotoCollage = () => {
                 </div>
                 <div className={CollageStyle.ability_text}>
                   <h6>Free Shipping</h6>
-                  <p>When ordering over $100</p>
+                  <p>100% Secure Online Payment</p>
                 </div>
               </div>
               <div className={CollageStyle.ability}>
@@ -67,7 +67,7 @@ const PhotoCollage = () => {
                 </div>
                 <div className={CollageStyle.ability_text}>
                   <h6>Free Shipping</h6>
-                  <p>When ordering over $100</p>
+                  <p>Original Product Guarenteed</p>
                 </div>
               </div>
             </div>
