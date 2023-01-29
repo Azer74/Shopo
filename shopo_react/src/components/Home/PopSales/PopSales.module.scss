@@ -1,5 +1,5 @@
 .six_section {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
 
   .section_heading {
     display: flex;
@@ -234,9 +234,11 @@
       }
     }
   }
+
   .long_prop {
     width: 100%;
     cursor: pointer;
+
     img {
       width: 100%;
       object-fit: cover;
