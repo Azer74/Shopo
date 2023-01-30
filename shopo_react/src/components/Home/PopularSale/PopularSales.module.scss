@@ -1,0 +1,111 @@
+.eight_section {
+  padding: 0 0 120px 0;
+  .section_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 30px;
+      color: #1d1d1d;
+      font-weight: 600;
+    }
+
+    .btn_more {
+      cursor: pointer;
+
+      span {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      svg {
+        font-size: 30px;
+        color: #797979;
+      }
+    }
+  }
+
+  .main_card {
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 1px;
+    display: flex;
+    padding: 20px;
+
+    &:hover {
+      .product_image {
+        .card_action {
+          left: 80%;
+        }
+      }
+
+      .card_texts {
+        .price_field {
+          button {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+
+    .product_image {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .card_texts {
+      width: 80%;
+      padding: 0 20px;
+
+      .stars {
+        display: flex;
+        margin-bottom: 12px;
+
+        svg {
+          font-size: 18px;
+        }
+      }
+
+      h5 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          color: #2563eb;
+        }
+      }
+
+      .price_field {
+        display: flex;
+        gap: 10px;
+        position: relative;
+
+        .old_price {
+          font-size: 18px;
+          text-decoration: line-through;
+          font-weight: 600;
+          color: #797979;
+        }
+
+        .new_price {
+          font-size: 18px;
+          font-weight: 600;
+          color: #ef262c;
+        }
+      }
+    }
+  }
+}

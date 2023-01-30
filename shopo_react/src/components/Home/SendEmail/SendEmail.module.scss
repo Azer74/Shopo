@@ -1,0 +1,62 @@
+.nine_section {
+  background-image: url(../../../assets/discount-banner-1.jpg);
+  width: 100%;
+  background-size: cover;
+  padding: 75px 0;
+  .col12_adaptation {
+    .email_heading {
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        color: #222222;
+        font-weight: 700;
+        span {
+          color: #ffbb38;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .input_field {
+      padding: 0 50px;
+      height: 54px;
+      margin-top: 30px;
+      form {
+        background-color: white;
+        padding: 0 0 0 15px;
+        display: flex;
+        height: 100%;
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+        }
+        &:focus-within {
+          span {
+            color: #ffbb38;
+          }
+        }
+        input {
+          border: none;
+          width: 70%;
+          padding: 0 10px;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          font-size: 14px;
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+        button {
+          width: 30%;
+          font-size: 14px;
+          color: black;
+          font-weight: 600;
+          border: none;
+          background-color: #ffbb38;
+        }
+      }
+    }
+  }
+}

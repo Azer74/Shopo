@@ -11,7 +11,7 @@ const NewArrivals = () => {
     AOS.init();
   }, []);
   return (
-    <section className={NewStyle.seven_section} data-aos="fade-up">
+    <section className={NewStyle.seven_section}>
       <div className="container px-3 mb-3">
         <div className="row px-5">
           <div className="col-xl-12">
@@ -29,7 +29,10 @@ const NewArrivals = () => {
         <div className="row px-5">
           {products.slice(0, 12).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 px-3">
+              <div
+                className="col-xl-3 col-lg-3 col-md-6 col-sm-12 px-3"
+                data-aos="fade-up"
+              >
                 <div className={NewStyle.main_card}>
                   <div className={NewStyle.product_image}>
                     <img src={element.image} alt="" />

@@ -189,6 +189,12 @@
         font-size: 15px;
         font-weight: 600;
         line-height: 24px;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+          color: #2563eb;
+        }
       }
 
       .price_field {
