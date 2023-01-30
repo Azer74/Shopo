@@ -4,6 +4,10 @@ nav {
 
     .left_nav_adapt {
       height: 100%;
+      @media (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+      }
 
       .logo {
         height: 100%;
@@ -13,6 +17,9 @@ nav {
     }
 
     .middle_nav_adapt {
+      @media (max-width: 992px) {
+        display: none;
+      }
       .searching_tools {
         margin: 0 auto;
         max-width: 517px;
@@ -81,6 +88,9 @@ nav {
           cursor: pointer;
           display: flex;
           align-items: center;
+          @media (max-width: 992px) {
+            display: none;
+          }
 
           &:nth-child(1) {
             font-size: 22px;
@@ -89,6 +99,9 @@ nav {
 
           &:nth-child(3) {
             font-size: 22px;
+            @media (max-width: 992px) {
+              display: block;
+            }
           }
 
           &:nth-child(4) {
@@ -102,6 +115,9 @@ nav {
   .down_nav {
     background-color: #ffbb38;
     height: 60px;
+    @media (max-width: 992px) {
+      display: none;
+    }
 
     .left_side_down_nav {
       display: flex;
