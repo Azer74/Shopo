@@ -13,7 +13,7 @@ const NewArrivals = () => {
   return (
     <section className={NewStyle.seven_section}>
       <div className="container px-3 mb-3">
-        <div className="row px-5">
+        <div className={`row ${NewStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={NewStyle.section_heading}>
               <h2>New Arrivals</h2>
@@ -26,7 +26,7 @@ const NewArrivals = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${NewStyle.row_media}`}>
           {products.slice(0, 12).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
               <div
@@ -85,7 +85,7 @@ const NewArrivals = () => {
         </div>
       </div>
       <div className="container px-3 mt-4">
-        <div className="row px-5">
+        <div className={`row ${NewStyle.row_media}`}>
           <div className="col-xl-12" data-aos="fade-right">
             <div className={NewStyle.ads_4}>
               <img src={Ads4} alt="" />

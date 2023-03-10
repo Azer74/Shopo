@@ -1,10 +1,33 @@
 .third_section {
   padding: 40px 0;
+  .row_media {
+    padding: 0 48px;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .container_media {
+    padding: 0 2rem;
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
   .section_heading {
     h2 {
       font-size: 30px;
       font-weight: 600;
+      @media (max-width: 640px) {
+        font-size: 20px;
+      }
     }
+  }
+  .row_media1 {
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+  .mobile_logo {
+    padding: 0;
   }
   .logo_container {
     background-color: white;
@@ -21,6 +44,7 @@
     height: 100%;
     background-position: 0% 0%;
     cursor: pointer;
+
     .add_info {
       padding: 3rem;
       .time {
@@ -43,6 +67,11 @@
             font-size: 30px;
             font-weight: 700;
             margin-bottom: 5px;
+            @media (max-width: 640px) {
+              width: 50px;
+              height: 50px;
+              font-size: 14px;
+            }
           }
           &:nth-child(1) {
             span {
@@ -68,6 +97,9 @@
             font-size: 18px;
             color: black;
             font-weight: 500;
+            @media (max-width: 640px) {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -95,6 +127,9 @@
     background-position: 0% 0%;
     .add_info {
       padding: 3rem;
+      @media (max-width: 768px) {
+        padding: 1.25rem 1.5rem 1.5rem;
+      }
       h6 {
         font-size: 13px;
         margin-bottom: 15px;
@@ -116,11 +151,23 @@
           cursor: pointer;
           img {
             max-width: 170px;
+            @media (max-width: 420px) {
+              max-width: 145px;
+            }
+            @media (max-width: 380px) {
+              max-width: 140px;
+            }
+            @media (max-width: 370px) {
+              max-width: 120px;
+            }
           }
         }
       }
       .lying_phone {
         margin-top: 40px;
+        @media (max-width: 640px) {
+          margin-top: 60px;
+        }
         img {
           width: 100%;
         }

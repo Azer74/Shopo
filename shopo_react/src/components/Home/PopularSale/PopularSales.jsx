@@ -12,7 +12,7 @@ const PopularSales = () => {
   return (
     <section className={PopularSaleStyle.eight_section}>
       <div className="container px-3 mb-3">
-        <div className="row px-5">
+        <div className={`row ${PopularSaleStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={PopularSaleStyle.section_heading}>
               <h2>Popular Sales</h2>
@@ -25,7 +25,7 @@ const PopularSales = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${PopularSaleStyle.row_media}`}>
           {products.slice(0, 12).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
               <div

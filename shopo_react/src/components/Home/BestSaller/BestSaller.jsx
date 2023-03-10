@@ -19,7 +19,7 @@ const BestSaller = () => {
   return (
     <section className={BestStyle.fifth_section}>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${BestStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={BestStyle.section_heading}>
               <h2>Best Saller</h2>
@@ -32,8 +32,11 @@ const BestSaller = () => {
         </div>
       </div>
       <div className="container px-3 mt-3">
-        <div className="row px-5">
-          <div className="col-xl-2" data-aos="fade-left">
+        <div className={`row ${BestStyle.row_media}`}>
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller1} alt="" />
@@ -41,7 +44,10 @@ const BestSaller = () => {
               <div className={BestStyle.division_name}>Shopno BD</div>
             </div>
           </div>
-          <div className="col-xl-2" data-aos="fade-left">
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller2} alt="" />
@@ -49,7 +55,10 @@ const BestSaller = () => {
               <div className={BestStyle.division_name}>Eecoms Shop</div>
             </div>
           </div>
-          <div className="col-xl-2" data-aos="fade-left">
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller3} alt="" />
@@ -57,7 +66,10 @@ const BestSaller = () => {
               <div className={BestStyle.division_name}>Fusion X</div>
             </div>
           </div>
-          <div className="col-xl-2" data-aos="fade-left">
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller4} alt="" />
@@ -65,7 +77,10 @@ const BestSaller = () => {
               <div className={BestStyle.division_name}>Rikayi Rox</div>
             </div>
           </div>
-          <div className="col-xl-2" data-aos="fade-left">
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller5} alt="" />
@@ -73,7 +88,10 @@ const BestSaller = () => {
               <div className={BestStyle.division_name}>Habbriyi</div>
             </div>
           </div>
-          <div className="col-xl-2" data-aos="fade-left">
+          <div
+            className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+            data-aos="fade-left"
+          >
             <div className={BestStyle.division}>
               <div className={BestStyle.division_image}>
                 <img src={Saller6} alt="" />
@@ -84,13 +102,13 @@ const BestSaller = () => {
         </div>
       </div>
       <div className="container px-3 mt-5 pt-3">
-        <div className="row px-5">
-          <div className="col-xl-6" data-aos="fade-right">
+        <div className={`row ${BestStyle.row_media}`}>
+          <div className="col-xl-6 col-lg-6" data-aos="fade-right">
             <div className={BestStyle.ads}>
               <img src={Ads1} alt="" />
             </div>
           </div>
-          <div className="col-xl-6" data-aos="fade-left">
+          <div className="col-xl-6 col-lg-6" data-aos="fade-left">
             <div className={BestStyle.ads}>
               <img src={Ads2} alt="" />
             </div>

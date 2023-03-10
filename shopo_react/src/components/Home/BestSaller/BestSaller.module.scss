@@ -1,4 +1,10 @@
 .fifth_section {
+  .row_media {
+    padding: 0 48px;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
   .section_heading {
     display: flex;
     justify-content: space-between;
@@ -8,6 +14,9 @@
       font-size: 30px;
       color: #1d1d1d;
       font-weight: 600;
+      @media (max-width: 640px) {
+        font-size: 20px;
+      }
     }
 
     .btn_more {
@@ -28,6 +37,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
     .division_image {
       background-color: white;
       display: flex;
@@ -48,5 +61,8 @@
   }
   .ads {
     cursor: pointer;
+    img {
+      width: 100%;
+    }
   }
 }

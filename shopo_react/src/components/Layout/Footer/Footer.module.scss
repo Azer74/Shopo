@@ -1,5 +1,12 @@
 footer {
   padding: 50px 0 25px 0;
+  .row_media {
+    padding: 0 48px;
+
+    @media (max-width: 768px) {
+      padding: 0 5px;
+    }
+  }
   .col_12_adapt {
     display: flex;
     justify-content: center;
@@ -11,6 +18,7 @@ footer {
   //  margin-top: 40px;
   // }
   .footer_list_col {
+    margin-bottom: 30px;
     h6 {
       color: #2f2f2f;
       font-size: 16px;
@@ -43,7 +51,7 @@ footer {
     }
   }
   .hr_col {
-    padding-top: 25px;
+    padding-top: 10px;
     hr {
       background-color: #efefef;
       color: #efefef;
@@ -71,6 +79,9 @@ footer {
           margin: 5px 0 0 0;
           color: #797979;
           font-weight: 300;
+          @media (max-width: 768px) {
+            font-size: 10px;
+          }
           span {
             font-weight: 500;
             color: #2f2f2f;
@@ -84,6 +95,9 @@ footer {
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 420px) {
+      justify-content: center;
+    }
     img {
       cursor: pointer;
     }

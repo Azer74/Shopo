@@ -13,7 +13,7 @@ const TopSelling = () => {
   return (
     <section className={TopSellStyle.fourth_section}>
       <div className="container px-3 mb-3">
-        <div className="row px-5">
+        <div className={`row ${TopSellStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={TopSellStyle.section_heading}>
               <h2>Top Selling Products</h2>
@@ -26,7 +26,7 @@ const TopSelling = () => {
         </div>
       </div>
       <div className="container px-3" data-aos="fade-left">
-        <div className="row px-5">
+        <div className={`row ${TopSellStyle.row_media}`}>
           {products.slice(3, 7).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">

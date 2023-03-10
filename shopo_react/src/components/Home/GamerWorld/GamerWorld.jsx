@@ -13,7 +13,7 @@ const GamerWorld = () => {
   return (
     <section className={GamerStyle.gamer} data-aos="fade-up">
       <div className="container px-3 mb-3">
-        <div className="row px-5">
+        <div className={`row ${GamerStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={GamerStyle.section_heading}>
               <h2>Gamer World</h2>
@@ -26,8 +26,8 @@ const GamerWorld = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5">
-          <div className="col-xl-3">
+        <div className={`row ${GamerStyle.row_media}`}>
+          <div className={`col-xl-3 ${GamerStyle.col_dnone}`}>
             <div className={GamerStyle.blue_banner}>
               <div className={GamerStyle.marks}>
                 <h6>Mobile & Tablet</h6>
@@ -55,7 +55,7 @@ const GamerWorld = () => {
           </div>
           {products.slice(0, 3).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 px-3">
+              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-3">
                 <div className={GamerStyle.main_card}>
                   <div className={GamerStyle.product_image}>
                     <img src={element.image} alt="" />

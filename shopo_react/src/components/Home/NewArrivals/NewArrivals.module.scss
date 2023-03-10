@@ -1,5 +1,12 @@
 .seven_section {
   padding: 60px 0;
+  .row_media {
+    padding: 0 48px;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
 
   .section_heading {
     display: flex;
@@ -10,6 +17,9 @@
       font-size: 30px;
       color: #1d1d1d;
       font-weight: 600;
+      @media (max-width: 640px) {
+        font-size: 20px;
+      }
     }
 
     .btn_more {

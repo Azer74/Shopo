@@ -14,7 +14,7 @@ const PhotoCollage = () => {
   return (
     <section className={CollageStyle.first_section}>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${CollageStyle.row_media}`}>
           <div className="col-xl-8" data-aos="fade-right">
             <div className={CollageStyle.image1}>
               <img src={PinkPhone} alt="" />

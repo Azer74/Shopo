@@ -2,8 +2,13 @@ nav {
   .up_nav {
     padding: 20px 0;
 
+    @media (max-width: 992px) {
+      display: none;
+    }
+
     .left_nav_adapt {
       height: 100%;
+
       @media (max-width: 992px) {
         display: flex;
         justify-content: center;
@@ -17,9 +22,6 @@ nav {
     }
 
     .middle_nav_adapt {
-      @media (max-width: 992px) {
-        display: none;
-      }
       .searching_tools {
         margin: 0 auto;
         max-width: 517px;
@@ -88,6 +90,7 @@ nav {
           cursor: pointer;
           display: flex;
           align-items: center;
+
           @media (max-width: 992px) {
             display: none;
           }
@@ -99,6 +102,7 @@ nav {
 
           &:nth-child(3) {
             font-size: 22px;
+
             @media (max-width: 992px) {
               display: block;
             }
@@ -115,6 +119,7 @@ nav {
   .down_nav {
     background-color: #ffbb38;
     height: 60px;
+
     @media (max-width: 992px) {
       display: none;
     }
@@ -171,6 +176,7 @@ nav {
           position: relative;
           display: flex;
           align-items: center;
+
           &:hover {
             .hover_menu {
               visibility: visible;
@@ -184,9 +190,11 @@ nav {
             display: flex;
             align-items: center;
             gap: 5px;
+
             span {
               font-size: 14px;
             }
+
             svg {
               font-size: 12px;
             }
@@ -205,12 +213,14 @@ nav {
             transition: all 0.5s ease-in-out;
             visibility: hidden;
             z-index: 5;
+
             ul {
               margin: 0;
               display: flex;
               flex-direction: column;
               padding: 20px;
               gap: 15px;
+
               li {
                 span {
                   font-weight: 300;
@@ -218,6 +228,7 @@ nav {
                   cursor: pointer;
                   transition: 0.1s ease-in-out;
                   border-bottom: 1px solid transparent;
+
                   &:hover {
                     color: #ffbb38;
                     border-bottom: 1px inset #ffbb38;
@@ -229,18 +240,76 @@ nav {
         }
       }
     }
+
     .right_side_down_nav {
       display: flex;
       justify-content: flex-end;
       height: 100%;
       padding: 10px 0;
+
       button {
         width: 60%;
         border: none;
         background-color: #222222;
         color: white;
+
         svg {
           margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .mobile_nav {
+    padding: 20px 0;
+    display: none;
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+
+    .side_adapt {
+      .menu_icon {
+        margin-left: 10px;
+        svg {
+          font-size: 25px;
+        }
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+
+      .cart_side {
+        text-align: end;
+        margin-right: 15px;
+
+        .pos_relative {
+          position: relative;
+          width: 22px;
+          height: 22px;
+          display: inline;
+
+          svg {
+            font-size: 22px;
+          }
+
+          small {
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            right: 0;
+            background-color: #ffbb38;
+            color: black;
+            // padding: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-size: 10px;
+            text-align: center;
+            line-height: 20px;
+          }
         }
       }
     }

@@ -26,7 +26,7 @@ const Shop = () => {
   return (
     <section className={ShopStyle.third_section}>
       <div className="container px-3 mb-3" data-aos="fade-up">
-        <div className="row px-5">
+        <div className={`row ${ShopStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={ShopStyle.section_heading}>
               <h2>Shop by Brand</h2>
@@ -34,66 +34,93 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      <div className="container px-5" data-aos="fade-up">
-        <div className="row px-4">
+      <div
+        className={`container ${ShopStyle.container_media}`}
+        data-aos="fade-up"
+      >
+        <div className={`row ${ShopStyle.row_media}`}>
           <div className="col-xl-12">
-            <div className="row">
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+            <div className={`row ${ShopStyle.row_media1}`}>
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand1} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand2} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand3} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand4} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand5} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand6} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand7} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand8} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand9} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand10} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand11} alt="" />
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 g-0">
+              <div
+                className={`col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6 ${ShopStyle.mobile_logo}`}
+              >
                 <div className={ShopStyle.logo_container}>
                   <img src={Brand12} alt="" />
                 </div>
@@ -103,8 +130,8 @@ const Shop = () => {
         </div>
       </div>
       <div className="container px-3 mt-5 pt-2">
-        <div className="row px-5">
-          <div className="col-xl-6" data-aos="fade-right">
+        <div className={`row ${ShopStyle.row_media}`}>
+          <div className="col-xl-6 mb-4" data-aos="fade-right">
             <div className={ShopStyle.backgrounded_adds1}>
               <div className={ShopStyle.add_info}>
                 <ul className={ShopStyle.time}>

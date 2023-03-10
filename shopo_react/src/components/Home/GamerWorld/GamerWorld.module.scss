@@ -1,5 +1,11 @@
 .gamer {
   padding: 20px 0;
+  .row_media {
+    padding: 0 48px;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
 
   .section_heading {
     display: flex;
@@ -10,6 +16,9 @@
       font-size: 30px;
       color: #1d1d1d;
       font-weight: 600;
+      @media (max-width: 640px) {
+        font-size: 20px;
+      }
     }
 
     .btn_more {
@@ -26,7 +35,11 @@
       }
     }
   }
-
+  .col_dnone {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
   .blue_banner {
     background-image: url(../../../assets/section-category-1.jpg);
     width: 100%;
@@ -82,6 +95,9 @@
     background-color: white;
     box-shadow: 0px 2px 27px -20px rgb(103, 103, 103);
     overflow: hidden;
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+    }
 
     &:hover {
       .product_image {

@@ -13,7 +13,7 @@ const PopSales = () => {
   return (
     <section className={PopSalesStyle.six_section} data-aos="fade-up">
       <div className="container px-3 mb-3">
-        <div className="row px-5">
+        <div className={`row ${PopSalesStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={PopSalesStyle.section_heading}>
               <h2>Popular Sales</h2>
@@ -26,8 +26,8 @@ const PopSales = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5">
-          <div className="col-xl-3">
+        <div className={`row ${PopSalesStyle.row_media}`}>
+          <div className={`col-xl-3 ${PopSalesStyle.col_dnone}`}>
             <div className={PopSalesStyle.blue_banner}>
               <div className={PopSalesStyle.marks}>
                 <h6>Mobile & Tablet</h6>
@@ -55,7 +55,7 @@ const PopSales = () => {
           </div>
           {products.slice(4, 7).map((element, index) => (
             <React.Fragment key={`data_id ${element.id}`}>
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 px-3">
+              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-3">
                 <div className={PopSalesStyle.main_card}>
                   <div className={PopSalesStyle.product_image}>
                     <img src={element.image} alt="" />
@@ -108,7 +108,7 @@ const PopSales = () => {
         </div>
       </div>
       <div className="container px-3 mt-5 pt-2">
-        <div className="row px-5">
+        <div className={`row ${PopSalesStyle.row_media}`}>
           <div className="col-xl-12" data-aos="fade-right">
             <div className={PopSalesStyle.long_prop}>
               <img src={Ads3} alt="" />

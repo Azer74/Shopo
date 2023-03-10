@@ -15,7 +15,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className={`col-6 ${NavStyle.col_none}`}>
               <div className={NavStyle.middle_nav_adapt}>
                 <div className={NavStyle.searching_tools}>
                   <div className={NavStyle.common_padding}>
@@ -119,6 +119,36 @@ const Navbar = () => {
                   Become a Seller
                   <Icon icon="ic:sharp-chevron-right" />
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={NavStyle.mobile_nav}>
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-3">
+              <div className={NavStyle.side_adapt}>
+                <div className={NavStyle.menu_icon}>
+                  <Icon icon="heroicons:bars-3-bottom-left-20-solid" />
+                </div>
+              </div>
+            </div>
+            <div className="col-5 px-1">
+              <div className={NavStyle.side_adapt}>
+                <div className={NavStyle.logo}>
+                  <img src={Logo} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className={NavStyle.side_adapt}>
+                <div className={NavStyle.cart_side}>
+                  <div className={NavStyle.pos_relative}>
+                    <Icon icon="bi:handbag" />
+                    <small>11</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

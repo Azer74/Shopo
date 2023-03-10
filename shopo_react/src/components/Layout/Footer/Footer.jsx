@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${FooterStyle.row_media}`}>
           <div className="col-xl-12">
             <div className={FooterStyle.col_12_adapt}>
               <div className={FooterStyle.footer_logo}>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5 justify-content-between">
+        <div className={`row justify-content-between ${FooterStyle.row_media}`}>
           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div className={FooterStyle.footer_list_col}>
               <h6>About Us</h6>
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container px-3">
-        <div className="row px-5">
+        <div className={`row ${FooterStyle.row_media}`}>
           <div className="col-xl-6">
             <div className={FooterStyle.footer_bottom_left}>
               <ul>
